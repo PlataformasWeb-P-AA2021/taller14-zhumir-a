@@ -47,7 +47,7 @@ export default {
             }
         },
         all: function () {
-            axios.get('http://127.0.0.1:8000/api/numerost/')
+            axios.get('http://127.0.0.1:8090/api/numerost/')
                 .then( response => {
                     this.telefonos = response.data
                 });
