@@ -1,13 +1,5 @@
 from django.db import models
 
-'''
-Entidades: Atributos
-- Edificio: nombre, dirección, ciudad, tipo [residencial, comercial]
-- Departamento: nombre completo del propietario, costo del departamento,
-	número de cuartos, edificio
-
-OBSERVACIÓN: UN DEPARTAMENTO PERTENECE A UN EDIFICIO.
-'''
 class Edificio(models.Model):
 	# Opciones para el atributo 'tipo'
 	opciones_tipo = (
